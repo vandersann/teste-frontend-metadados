@@ -1,0 +1,35 @@
+
+    import React from 'react';
+    import { Link } from 'react-router-dom';
+    import { Product } from '../../types';
+    import AddToCartButton from '../AddToCartButton/AddToCartButton';
+    import './ProductList.scss';
+
+    interface ProductListProps {
+    products: Product[];
+    }
+
+    const ProductList: React.FC<ProductListProps> = ({ products }) => {
+    return (
+        <div className="product-list">
+        {products.map((product) => (
+            <div key={product.id} className="product-card">
+            <Link to={`/produto/${products.id}`} className="product-link">
+                <img src={product.image} alt={product.name} className="product-image" />
+                <div className="product-info">
+                <h3 className="product-name">{product.name}</h3>
+                <p className="product-price">R$ {product.price.toFixed(2)}</p>
+                </div>
+            </Link>
+            <AddToCartButton
+                productId={product.id}
+                productName={product.name}
+                productPrice={product.price}
+            />
+            </div>
+        ))}
+        </div>
+    );
+    };
+
+    export default ProductList;

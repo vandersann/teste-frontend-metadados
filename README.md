@@ -1,35 +1,45 @@
-# Vaga desenvolvedor Front End Pleno
+# Teste Frontend Metadata
 
-O desafio envolve desenvolver uma aplicação baseando-se em um protótipo no Figma e implementar funcionalidades como: listar todos os produtos, buscar produtos pelo nome, listar produtos por categoria e adicionar produtos ao carrinho.
- 
-## Quem somos?
-A Metadados é uma empresa que há mais de três decádas vem desenvolvendo soluções para Recursos Humanos. Nossa história é marcada pela conexão entre pessoas, forjando relações de confiança. Somos especialistas na área de RH e entregamos - a milhares de clientes - tecnologias, serviços e conhecimentos para evoluir pessoas.
-Compartilhamos uma trajetória ativa, forte e pulsante! 
+Este projeto foi desenvolvido com o objetivo de criar uma aplicação web que permite visualizar e interagir com uma lista de produtos provenientes de uma API. Infelizmente, devido a limitações de tempo, não foi possível concluir todas as funcionalidades planejadas. No entanto, a estrutura básica e algumas funcionalidades principais foram implementadas.
 
-## Instruções
-- Faça um fork desse projeto para sua conta do Github;
-- Desenvolva conforme as intruções técnicas;
-- Crie um README com intruções de como executar o projeto;
-  
-## Projeto
-Você foi selecionado para participar de um teste técnico para a vaga de Front-End Pleno. Sua missão é desenvolver uma aplicação seguindo o [layout](https://www.figma.com/file/HYMUQxxwvGfSHeQMyY6ZKM/Teste-Front-end?type=design&node-id=604%3A431&mode=design&t=TFNLa19Qm8W8AH2J-1) no Figma. 
+## Principais Funcionalidades
 
-### Especificações técnicas
-- A aplicação deve ser desenvolvida utilizando a biblioteca React;
-- Utilize CSS, CSS modules, qualquer pré-processador ou alguma biblioteca de css-in-js como o styled-components ou [goober](https://goober.js.org/).
-- Não Utilizar bibliotecas de UI como Bootstrap, Tailwind, Chakra ou afins;
-- A aplicação deve consumir as informações de produtos e categorias da seguinte API REST [Platzi Fake Store API](https://fakeapi.platzi.com/en/about/introduction/);  
-- No mais, sinta-se livre para escolher sua arquitetura e bibliotecas favoritas.
+- Visualizar uma lista de produtos.
+- Adicionar produtos ao carrinho de compras.
+- Remover produtos do carrinho de compras.
+- Pesquisar produtos por nome.
 
-### Pontos extras
-- Utilização de Typescript;
-- Responsividade;
-- Escrita de testes automatizado para as principais funcionalidades;
-- Fique a vontade para adicionar novas funcionalidades ao projeto.
-  
-### Critérios de Avaliação:
-- Fidelidade ao protótipo;
-- Componentização;
-- Organização do projeto;
+## Tecnologias Utilizadas
 
-  
+- React.js
+- TypeScript
+- Sass
+- Axios
+
+## Como Instalar e Rodar o Projeto
+
+1. **Clone o repositório:**
+   ```bash
+   git clone https://github.com/seu-usuario/teste-frontend-metadados.git
+
+2. **Instale  as dependências com npm ou yarn:**
+   ```bash
+   cd teste-frontend-metadados
+   npm install
+   //ou
+   yarn install
+
+3.  **Rode a aplicação:**
+    ```bash
+    npm start
+    //ou
+    yarn start
+
+## Instruções Adicionais
+
+* **Certifique-se de ter o Node.js instalado na sua máquina.**
+* **Para realizar testes, utilize o comando:**
+  ```bash
+  npm test
+  //ou
+  yarn test

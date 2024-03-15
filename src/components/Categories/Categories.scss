@@ -1,0 +1,20 @@
+
+    .categories {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+
+    .category {
+        padding: 5px 10px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+        cursor: pointer;
+        background-color: #f0f0f0;
+        transition: background-color 0.3s;
+
+        &.active {
+        background-color: #007bff;
+        color: #fff;
+        }
+    }
+    }
